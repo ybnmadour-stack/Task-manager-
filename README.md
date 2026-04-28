@@ -1,7 +1,7 @@
 # Task Manager Full-Stack Project
 
 ## Project Description
-This is a full-stack Task Manager web application. Users can register, login, add tasks, view tasks, open task details, mark tasks as complete, and delete tasks. The React frontend connects to a Node.js/Express REST API, and the backend stores users and tasks in a MySQL database.
+This is a full-stack Task Manager web application. Users can register, login, add tasks, view tasks, open task details, mark tasks as complete, and delete tasks. The React frontend connects to a Node.js/Express REST API, and the backend stores users and tasks in a MsSQL database.
 
 ## Tech Stack
 - React
@@ -9,7 +9,7 @@ This is a full-stack Task Manager web application. Users can register, login, ad
 - CSS
 - Node.js
 - Express.js
-- MySQL
+- MsSQL
 - JWT authentication
 - bcrypt password hashing
 - CORS
@@ -20,7 +20,7 @@ This is a full-stack Task Manager web application. Users can register, login, ad
 - Secure password storage using bcrypt
 - JWT-protected task routes
 - Create, read, update, and delete tasks
-- MySQL database relationship: one user can own many tasks
+- MsSQL database relationship: one user can own many tasks
 - Responsive design for desktop, tablet, and mobile
 - Frontend connected to backend API
 
@@ -65,8 +65,8 @@ task-manager-react
 └── README.md
 ```
 
-## MySQL Setup
-1. Open MySQL Workbench, phpMyAdmin, XAMPP MySQL, or MySQL command line.
+## Mssql Setup
+1. Open MsSQL Workbench, phpMyAdmin, XAMPP MsSQL, or msSQL command line.
 2. Run the SQL file:
 
 ```sql
@@ -108,7 +108,7 @@ npm run dev
 Expected result:
 
 ```text
-Connected to MySQL database
+Connected to MsSQL database
 Server running on http://localhost:5000
 ```
 
@@ -126,17 +126,17 @@ Open the Vite URL shown in the terminal, usually:
 http://localhost:5173
 ```
 
-## How to Link React to MySQL
-React does not connect directly to MySQL. The correct link is:
+## How to Link React to MsSQL
+React does not connect directly to MsSQL. The correct link is:
 
 ```text
-React frontend → Express API → MySQL database
+React frontend → Express API → MsSQL database
 ```
 
 The connection is already done in these files:
 - Frontend API calls: `src/services/api.js`
 - Backend routes: `Backend/routes/authRoutes.js` and `Backend/routes/taskRoutes.js`
-- MySQL connection: `Backend/config/db.js`
+- MsSQL connection: `Backend/config/db.js`
 - Database tables: `Backend/sql/schema.sql`
 
 ## API Endpoints
@@ -158,7 +158,7 @@ DELETE /api/tasks/:id
 Task routes require a JWT token.
 
 ## Demo Steps
-1. Start MySQL.
+1. Start MsSQL.
 2. Run `Backend/sql/schema.sql`.
 3. Start backend with `npm run dev` inside `Backend`.
 4. Start frontend with `npm run dev` in the main folder.

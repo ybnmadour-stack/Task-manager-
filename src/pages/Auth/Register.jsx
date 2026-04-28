@@ -38,7 +38,7 @@ function Register() {
     <main className="page">
       <section className="TASKS-TO-DO auth-card">
         <h1>Register</h1>
-        <p className="muted">Create an account to store tasks in MySQL.</p>
+        <p className="muted">Create an account to store tasks in MsSQL.</p>
         {error && <p className="error">{error}</p>}
         <form className="stacked-form" onSubmit={handleSubmit}>
           <label>Name</label>

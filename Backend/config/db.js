@@ -8,18 +8,18 @@ const config = {
   database: process.env.DB_DATABASE,
   options: {
     encrypt: true,
-    trustServerCertificate: false
+    trustServerCertificate: true
   }
 };
 
 const poolPromise = new sql.ConnectionPool(config)
   .connect()
   .then((pool) => {
-    console.log("Connected to Azure SQL ✅");
+    console.log("Connected to SQL Server ✅");
     return pool;
   })
   .catch((err) => {
-    console.error("SQL connection failed ❌", err);
+    console.error("SQL Server connection failed ❌", err);
   });
 
 async function testConnection() {

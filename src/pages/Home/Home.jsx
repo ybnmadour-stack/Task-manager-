@@ -8,7 +8,7 @@ function Home() {
     <main className="home">
       <section className="TASKS-TO-DO home-content">
         <h1>Welcome to Task Manager</h1>
-        <p>Manage your daily tasks efficiently with React, Express and MySQL.</p>
+        <p>Manage your daily tasks efficiently with React, Express and MsSQL.</p>
         {user && <p className="muted">Logged in as {user.name}</p>}
 
         <div className="home-buttons">

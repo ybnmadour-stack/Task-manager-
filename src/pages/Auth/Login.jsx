@@ -33,7 +33,7 @@ function Login() {
     <main className="page">
       <section className="TASKS-TO-DO auth-card">
         <h1>Login</h1>
-        <p className="muted">Access your saved MySQL tasks.</p>
+        <p className="muted">Access your saved MsSQL tasks.</p>
         {error && <p className="error">{error}</p>}
         <form className="stacked-form" onSubmit={handleSubmit}>
           <label>Email</label>
